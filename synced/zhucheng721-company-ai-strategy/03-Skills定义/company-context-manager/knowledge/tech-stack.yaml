@@ -1,0 +1,57 @@
+# 乾江盛世科技 — 技术栈
+# 最后更新：2026-03-29
+
+development:
+  backend:
+    language: Java
+    framework: Spring Boot
+    orm: MyBatis-Plus
+    database: [MySQL, Redis, MongoDB]
+    developers: 3人
+
+  frontend:
+    developers: 1人
+    note: 标准前端技术栈
+
+  product:
+    developers: 1人
+
+  team_total: 5人
+  tech_lead: 彭涛
+
+self_developed_products:
+  return_software:
+    name: 退货管理SaaS
+    status: 核心产品
+    features: [AI质检, 退回策略优化, 智能分拣, 派费提升]
+    platforms: [京东, 顺丰, 通达系]
+
+  transit_software:
+    name: 中转仓管理系统
+    status: 运营中
+    features: [订单管理, 提前揽收, 库存管理]
+    platforms: [抖音, 快手, 小红书, 微信视频号, 京东, 淘宝, 拼多多, 1688]
+
+  wms:
+    name: WMS仓库管理
+    status: 自研
+    features: [多仓管理, Ozon对接, 质检流程]
+
+ai_infrastructure:
+  claude_code: { role: 战略规划+代码+评审, status: active }
+  deepseek: { role: 中文商业分析, status: active }
+  minimax: { role: 趋势分析, status: active }
+  gemini: { role: 创意+营销+生图, status: active }
+  dashscope: { role: 配音(CosyVoice)+生图(通义万象), status: active }
+  tavily: { role: 实时搜索, status: active }
+  perplexity: { role: 深度研究, status: active }
+
+  automation:
+    feishu_bot: { name: 小龙虾, app_id: cli_a93d4e14f9fa5bb5 }
+    intel_briefing: { script: scripts/daily-intel-briefing.py, schedule: "07:30 Mon-Sat" }
+    task_cron: { morning: "08:30", evening: "20:00" }
+
+content_tools:
+  baoyu_suite: [xhs-images, cover-image, article-illustrator, infographic, slide-deck]
+  video: [Remotion(模板化), LibTV(AI创意), CosyVoice(配音)]
+  distribution: [agent-reach(社媒), firecrawl(爬取)]
