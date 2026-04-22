@@ -1,0 +1,33 @@
+# 品牌资产
+# 最后更新：2026-03-27
+
+brand:
+  company_name: 乾江盛世科技
+  slogan: 智运天下 · 效达未来
+  logo: files/03-品牌素材/logo-official.png
+  logo_style: A2多彩盾牌（极光宝石色+金色浮雕边框+电路纹理）
+
+  colors:
+    primary: "#6366f1"      # 电光靛蓝
+    secondary: "#0a0a1a"    # 深空黑
+    accent_gold: "#fbbf24"  # 皇家金
+    accent_cyan: "#22d3ee"  # 电光青
+    text: "#f8fafc"         # 亮白
+
+  fonts:
+    primary: Noto Sans SC
+    fallback: [PingFang SC, Microsoft YaHei, sans-serif]
+
+  voice:
+    tts_engine: CosyVoice cosyvoice-v1
+    voice_id: longshu
+    voice_desc: 龙叔，沉稳大气男声，像新闻主播
+    note: 后续可录参考音频做声音克隆
+
+  business_line_taglines:
+    A: 不囤货、不被罚，中转发货合规又快
+    B1: 用我们的软件，每单退货多赚4-5毛
+    B2: 退货不白亏，我们给你返点
+    C: AI退货管理，人工成本直降
+    D: 跨境转运+质检一站式
+    E: 不知道AI怎么落地？我们帮你一步步实现
