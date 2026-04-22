@@ -1,0 +1,24 @@
+.DS_Store
+.agent/
+.agents/
+.claude/
+skills/
+skills-lock.json
+scripts/.env
+scripts/logs/
+
+# 编辑器/系统配置
+.obsidian/
+.vscode/
+.idea/
+
+# 通用 node_modules
+node_modules/
+*.log
+
+# 密钥本地台账（永不入库）
+config/secrets/*.local.md
+config/secrets/.env*
+# 白名单：索引和示例文件可入库
+!config/secrets/README.md
+!config/secrets/.env.example
