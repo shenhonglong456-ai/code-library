@@ -1,0 +1,44 @@
+# 团队结构
+# 最后更新：2026-03-27
+
+team:
+  boss:
+    name: 孟奇
+    role: 老板/CEO
+    note: 群里叫孟总
+
+  management:
+    name: 朱成成
+    alias: 朱总
+    role: 管理/运营总监
+    note: 群里叫朱总，不叫Rita。实际负责公司日常运营和AI战略推进
+
+  market:
+    name: 申洪龙
+    role: 市场
+
+  customer_service:
+    name: 张春平
+    role: 客服
+
+  operations:
+    - name: 孟祥硕
+      role: 运营（负责建表填数据）
+    - name: 路涛
+      role: 运营
+
+  tech:
+    name: 彭涛
+    role: 产品技术负责人
+    tech_stack: Java/Spring Boot/MyBatis-Plus/MySQL/Redis
+    team_size: 5人开发团队
+
+feishu:
+  employee_group: oc_f72c4a469459f3b8a7ced24747708293  # 3-4人
+  management_group: oc_fe5d3d2dfe6bb865c5d00cd168bd4146  # 6人（老板圈）
+  app_id: cli_a93d4e14f9fa5bb5
+  app_token_ref: "见 config/secrets/SECRET-REGISTRY.local.md（FEISHU_APP_TOKEN）"
+
+notes:
+  - 内部数据只发管理群，不发员工群
+  - 没有"梦琪"这个人
