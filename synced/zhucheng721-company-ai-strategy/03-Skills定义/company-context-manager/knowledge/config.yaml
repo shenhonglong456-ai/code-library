@@ -1,0 +1,97 @@
+# 系统配置
+# 最后更新：2026-03-27
+
+apis:
+  dashscope:
+    key_location: .zshrc + ~/.baoyu-skills/.env
+    capabilities: [CosyVoice配音, 通义万象生图, qwen文本生成]
+    status: active
+
+  google_ai:
+    key_location: ~/.baoyu-skills/.env
+    capabilities: [Gemini生图, 音视频转文字]
+    status: active
+
+  tavily:
+    key_location: .zshrc + MCP
+    capabilities: [实时搜索]
+    status: active
+
+  perplexity:
+    key_location: .zshrc + MCP
+    capabilities: [深度研究]
+    status: active
+
+  firecrawl:
+    key_location: .zshrc + MCP
+    capabilities: [网站爬取]
+    status: active
+
+  libtv:
+    key_location: .zshrc
+    capabilities: [AI视频创作]
+    status: active
+    note: 通过OpenClaw使用效果最好
+
+  openrouter:
+    key_location: ~/.baoyu-skills/.env
+    capabilities: [GPT Image等模型代理]
+    status: active
+
+tools:
+  n8n: { status: installed, run: "npx n8n", ui: "localhost:5678" }
+  obsidian: { status: installed, vault: "files/" }
+  remotion: { status: installed, path: "files/04-业务线/video-templates/" }
+  ffmpeg: { status: installed }
+  yt-dlp: { status: installed }
+  gstack: { status: installed, skills: 28 }
+  superpowers: { status: installed }
+  browser-use: { status: installed }
+
+feishu:
+  app_id: cli_a93d4e14f9fa5bb5
+  app_token_ref: "见 config/secrets/SECRET-REGISTRY.local.md（FEISHU_APP_TOKEN）"
+  tables:
+    task_supervision: 任务督办表
+    daily_report: 业务数据日报表
+    decisions: 结论与决策表
+    customer_volume: { id: tblUh7CqelwfofAd, name: 客户单量表 }
+    warehouse_summary: { id: tbl0xyP4xmc6KsOP, name: 仓库汇总表 }
+    return_warehouse: { id: tblS4at7AyGAHVon, name: 退货仓数据表 }
+
+  deepseek:
+    key_location: scripts/.env
+    capabilities: [中文商业分析]
+    status: active
+
+  minimax:
+    key_location: scripts/.env
+    model: MiniMax-M2.7
+    api_base: https://api.minimaxi.com/v1
+    capabilities: [趋势分析]
+    status: active
+    note: 域名是minimaxi不是minimax，消息要带name字段
+
+  anthropic:
+    key_location: scripts/.env (来自OpenClaw配置)
+    capabilities: [情报评审总编, 代码生成]
+    status: active
+
+automation:
+  intel_briefing:
+    script: scripts/daily-intel-briefing.py
+    schedule: "07:30 Mon-Sat (crontab)"
+    sources: [Tavily, Perplexity, DeepSeek, MiniMax]
+    editor: Claude Sonnet
+    push_target: 飞书管理日报群
+    push_method: 直连飞书API(非lark-cli)
+
+  feishu_cron:
+    morning_todo: "08:30 Mon-Sat"
+    evening_summary: "20:00 Mon-Sat"
+    managed_by: OpenClaw(小龙虾)
+
+pending:
+  - 彭涛给数据库API/字段结构 → 写数据自动同步脚本
+  - 微信公众号注册 → 配AppID/AppSecret
+  - 企业微信开通 → 私域沉淀
