@@ -1,0 +1,48 @@
+# 客户画像
+# 最后更新：2026-03-27
+
+customer_groups:
+
+  traditional_ecommerce:
+    name: 传统电商商家
+    needs: 仓配代发+订单管理
+    pain_points: [自建仓库成本高, 多平台订单管理混乱, 发货时效压力]
+    target_business_line: A线
+
+  dropshipping:
+    name: 无货源/Dropshipping商家
+    needs: 一件代发+店群管理
+    pain_points: [平台不允许直接从供应商发货, 提前揽收要求, 合规风险]
+    target_business_line: A线
+
+  courier_boss:
+    name: 快递加盟网点老板
+    needs: 退货派费优化+经营提效
+    pain_points: [同地址超3/20单派费打折, 竞争力下降, 返利空间被压缩]
+    target_business_line: B线
+    key_metric: 每单多赚0.4-0.5元
+
+  cloud_warehouse:
+    name: 云仓/共配老板
+    needs: 退货代处理+业务多元化
+    pain_points: [退货处理人工成本高, 缺AI质检能力, 管理不够数字化]
+    target_business_line: B线+C线
+
+  large_ecommerce:
+    name: 大型电商公司
+    needs: 退货返点+成本优化
+    pain_points: [日退货几千单纯亏损, 没渠道拿高派费, 退货管理效率低]
+    target_business_line: B线+C线
+    key_metric: 每单返2-3毛
+
+  cross_border_seller:
+    name: Ozon跨境卖家
+    needs: 跨境转运+质检
+    pain_points: [退货运费高, 清关复杂, 仓储管理]
+    target_business_line: D线
+
+  enterprise_seeking_ai:
+    name: 想做AI落地的企业
+    needs: AI咨询+实施
+    pain_points: [知道AI但不知道怎么落地, 人工成本高, 流程不标准]
+    target_business_line: E线
