@@ -1,0 +1,115 @@
+# 乾江盛世科技 — 业务线定义
+# 最后更新：2026-03-27
+# 数据来源：Rita口述确认（2026-03-21）+ company-context.md
+
+company_name: 乾江盛世科技有限公司
+slogan: 智运天下 · 效达未来
+core_advantage: 仓配服务 + 自研软件 + AI能力 三位一体
+
+business_lines:
+
+  A-transit:
+    name: 国内电商转运仓
+    status: 核心现金流
+    target_customer: 无货源电商老板（一件代发/代发模式）
+    customer_logic: 买家下单后去PDD/淘宝/1688采购→采购到我们仓库→从我们仓库发货
+    pain_points:
+      - 平台不允许商家从供应商直接发货给买家，老板不想囤货
+      - 不通过转运仓发货无法实现"提前揽收"，导致平台考核罚款
+    our_value:
+      - 规避平台风险和考核罚款
+      - 提前揽收：物流数据先跑起来，满足平台时效要求
+    revenue_model: 按客户业务单量收费
+    one_liner: 不囤货、不被罚，中转发货合规又快
+    warehouses: [北京仓, 上海仓, 深圳仓, 武汉仓]
+
+  B-returns:
+    name: 退货业务
+    status: 利润增长引擎
+    sub_models:
+
+      B1-courier-boss:
+        name: 快递老板+退货软件
+        target_customer: 快递老板（手头有三四家加盟快递公司）
+        customer_logic: 通过与京东/顺丰等第三方合作，将电商退货引导至自己站点赚派费
+        pain_points:
+          - 同一地址退货超3单或20单，派费打折
+          - 派费降低→给客户返利少→失去竞争力
+        our_value: 软件帮快递站点提高派费水平，每单多赚0.4-0.5元
+        customer_benefit:
+          - 提高竞争力：派费收入增加，可给客户更多让利
+          - 增加收益：不用软件几毛钱/单，用了多赚4-5毛/单
+        revenue_model: 每单技术服务费（买家申请退货→系统生成面单→扣服务费）
+        one_liner: 用我们的软件，每单退货多赚4-5毛
+
+      B2-ecommerce:
+        name: 大型电商+返点
+        target_customer: 日退货几千单的大型电商
+        pain_points:
+          - 大量退货本身是损失
+          - 退到同一地址，快递公司拿不到高派费，没动力给返点
+        our_value:
+          - 提供自有公配站点（电商没渠道拿高派费时）
+          - 提供配套软件
+          - 给客户一定返点
+        customer_benefit: 每单返2-3毛，日均几千单=可观利润
+        revenue_model: 软件服务费 + 派件费与返点差额
+        one_liner: 退货不再是纯亏，每天几千单每单返几毛
+
+  C-software:
+    name: 软件开发与销售
+    status: 技术能力底座
+    note: 乾江盛世本身就是一家软件公司
+    tech_stack: Java/Spring Boot/MyBatis-Plus/MySQL/Redis
+    dev_team_size: 5人
+    sub_models:
+
+      C1-self-developed:
+        name: 自研软件产品
+        products:
+          - 退货软件SaaS（重点产品）— AI质检、退回策略优化、智能分拣
+          - 中转软件（支持A线业务，也对外销售）
+        selling_points: [AI质检, 退回策略优化, 人工智能化分拣, 显著降低人工成本]
+
+      C2-white-label:
+        name: 软件贴牌/OEM
+        description: 把自研产品贴牌给其他公司使用
+
+      C3-custom-dev:
+        name: 定制软件开发
+        description: 客户有什么需求团队都能接
+        examples: [ERP系统, 美团相关工具, 电商运营工具, 物流管理系统]
+        note: 这是一条可扩展的业务线，不局限于物流行业
+
+    revenue_model:
+      - C1：SaaS订阅费 + 软件+服务双收
+      - C2：贴牌授权费/分成
+      - C3：项目开发费（按需报价）
+    one_liner: AI退货管理，人工成本直降，退货变利润
+
+  D-cross-border:
+    name: 跨境转运仓（Ozon）
+    status: 增长拓展
+    model: 前端合作伙伴负责Ozon客户推广，我们负责后端
+    partner_role: Ozon平台推广+客户资源
+    our_role: WMS系统对接 + 仓库服务
+    services: [跨境转运, 拆包处理, 质量检查]
+    revenue_model: 仓库服务各环节费用
+    one_liner: 跨境转运+质检一站式，合作伙伴对接
+
+  E-ai-service:
+    name: AI企业服务
+    status: 战略重点
+    target_customer: 知道AI但不知道怎么落地的企业
+    our_value:
+      - 帮企业一点一点通过AI实现流程自动化和智能化
+      - 节省人工成本
+      - 让业务可控、可视化、标准化
+    revenue_model: AI咨询+实施服务费
+    one_liner: 不知道AI怎么落地？我们帮你一步步实现
+    priority_markets:
+      - P1: 快递/云仓提效
+      - P2: 电商AI运营
+      - P3: 跨境辅助
+      - P4: AI培训引流
+      - P5: 港口智能化（战略储备）
